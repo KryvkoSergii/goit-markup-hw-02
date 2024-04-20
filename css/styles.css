@@ -1,0 +1,106 @@
+:root {
+    --primary-font: "Roboto", sans-serif;
+    --logo-font: "Raleway", sans-serif;
+    --logo-text-color-prefix: #4D5AE5;
+    --logo-text-color-light: #F4F4FD;
+    --logo-text-color-dark: #2E2F42;
+    --body-text-color: background: #434455;
+    --card-border-color: #E7E9FC;
+    --footer-background: #2E2F42;
+    --footer-text-color: #E7E9FC;
+
+}
+
+body {
+    font-family: var(--primary-font);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: var(--body-text-color);
+}
+
+header {
+    height: 72;
+    border: 1px solid var(--card-border-color);
+    background-color: #FFF;
+}
+
+header a {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-align: left;
+}
+
+.logo-dark {
+    font-family: var(--logo-font);
+    color: var(--logo-text-color-dark);
+}
+
+.logo-light {
+    font-family: var(--logo-font);
+    color: var(--logo-text-color-light);
+}
+
+.logo-dark span, .logo-light span{
+    color: var(--logo-text-color-prefix);
+}
+
+nav li, address li{
+    list-style-type: none
+}
+
+address a {
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-align: left;
+}
+
+address a:focus,
+address a:hover {
+    color: #404BBF;
+}
+
+main li{
+    list-style-type: none
+}
+
+button{
+    cursor: pointer
+}
+
+.card {
+    border: 1px solid var(--card-border-color);
+    width: 360px;
+    height: 420px;
+}
+
+.card h3 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-align: left;
+}
+
+.card img{
+    width: 360px;
+    height: 300px;
+}
+
+footer {
+    background-color: var(--footer-background);
+    color: var(--footer-text-color);
+    height: 312px;
+}
+
+.footer-card{
+    height: 112px;
+    width: 264px;
+}
