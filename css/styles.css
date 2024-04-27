@@ -1,87 +1,188 @@
 :root {
-    --primary-font: "Roboto", sans-serif;
-    --logo-font: "Raleway", sans-serif;
+    --primary-font: "Roboto";
+    --primary-font-color: #434455;
+    --logo-font: "Raleway";
     --logo-text-color-prefix: #4D5AE5;
     --logo-text-color-light: #F4F4FD;
     --logo-text-color-dark: #2E2F42;
-    --body-text-color: background: #434455;
-    --card-border-color: #E7E9FC;
-    --footer-background: #2E2F42;
-    --footer-text-color: #E7E9FC;
-
+    --header-background: #FFFFFF;
+    --header-border: #E7E9FC;
+    --dark-background: var(--logo-text-color-dark);
+    --footer-text-color: var(--logo-text-color-light);
+    --on-hover: #404BBF;
 }
 
 body {
     font-family: var(--primary-font);
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0.02em;
-    text-align: left;
-    color: var(--body-text-color);
+    color: var(--primary-font-color);
 }
 
-header {
-    height: 72;
-    border: 1px solid var(--card-border-color);
-    background-color: #FFF;
+.header {
+    background-color: var(--header-background);
+    border: 1px solid var(--header-border);
 }
 
-header a {
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: 0.02em;
-    text-align: left;
+.logo-text {
+    font-family: var(--logo-font);
+    font-size: 18px;
+    font-weight: 800;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.logo-text-prefix {
+    color: var(--logo-text-color-prefix);
 }
 
 .logo-dark {
-    font-family: var(--logo-font);
+    background-color: var(--header-background);
     color: var(--logo-text-color-dark);
 }
 
 .logo-light {
-    font-family: var(--logo-font);
+    background-color: var(--footer-background);
     color: var(--logo-text-color-light);
 }
 
-.logo-dark span, .logo-light span{
-    color: var(--logo-text-color-prefix);
-}
-
-nav li, address li{
-    list-style-type: none
-}
-
-address a {
-    color: #000;
+.header-text {
+    color: var(--primary-font-color);
+    font-weight: 500;
     font-size: 16px;
-    font-weight: 400;
     line-height: 24px;
-    letter-spacing: 0.02em;
-    text-align: left;
+    text-decoration: none;
 }
 
-address a:focus,
-address a:hover {
-    color: #404BBF;
+.header-address {
+    color: var(--primary-font-color);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    text-decoration: none;
 }
 
-main li{
+.header-address:hover,
+.header-address:active {
+    color: var(--on-hover);
+}
+
+.list-item {
     list-style-type: none
 }
 
-button{
-    cursor: pointer
+.footer-text {
+    color: var(--footer-text-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
 }
 
-.card {
-    border: 1px solid var(--card-border-color);
+.footer-card {
+    background-color: var(--dark-background);
+    height: 112px;
+    width: 264px;
+}
+
+
+
+.banner {
+    background-color: var(--dark-background);
+    height: 600px;
+}
+
+.banner-text {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 60px;
+    text-align: center;
+    color: var(--header-background);
+}
+
+.main-order-service-btn {
+    background-color: var(--logo-text-color-prefix);
+    color: var(--header-background);
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    text-decoration: none;
+    height: 56px;
+    width: 169px;
+}
+
+.main-feature-item {
+    height: 104;
+}
+
+.main-feature-title-text {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.main-feature-content-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.work-example-header {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+}
+
+.our-team-header {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+}
+
+.our-team-person-name {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.our-team-person-position {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+
+
+
+.portfolio-navigation-btn {
+    background-color: var(--header-border);
+    color: var(--logo-text-color-prefix);
+    border: none;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    height: 48px;
+}
+
+.portfolio-navigation-btn:hover,
+.portfolio-navigation-btn:active {
+    color: var(--header-background);
+    background-color: var(--on-hover);
+}
+
+.card-pane {
+    border: 1px solid var(--header-border);
     width: 360px;
     height: 420px;
 }
 
-.card h3 {
+
+.card:link {
+    text-decoration: none;
+}
+
+.card-title {
     font-size: 20px;
     font-weight: 500;
     line-height: 24px;
@@ -89,18 +190,10 @@ button{
     text-align: left;
 }
 
-.card img{
-    width: 360px;
-    height: 300px;
-}
-
-footer {
-    background-color: var(--footer-background);
-    color: var(--footer-text-color);
-    height: 312px;
-}
-
-.footer-card{
-    height: 112px;
-    width: 264px;
+.card-desc {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-align: left;
 }
